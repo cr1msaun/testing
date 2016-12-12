@@ -2,7 +2,7 @@
 
 A simple poll application created for testing your (programming) skills.
 Written in React + Redux, kindly bundled by Webpack.
-Created without using CSS frameworks.
+Created without using CSS frameworks with BEM methodology.
 
 Stack of frontend technologies used in this project: HTML5, CSS3, Javascript ES6 + Babel, React, Redux, Webpack, Pug, SASS, PostCSS
 
