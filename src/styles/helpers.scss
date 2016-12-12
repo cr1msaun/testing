@@ -1,0 +1,40 @@
+.container {
+  @include desktop {
+    padding-left: $container-side-padding-desktop;
+    padding-right: $container-side-padding-desktop;
+  };
+
+  @include mobiles {
+    padding-left: 0;
+    padding-right: 0;
+  };
+}
+
+.container-mobile {
+  @include mobiles {
+    padding-left: $container-side-padding-mobiles;
+    padding-right: $container-side-padding-mobiles;
+  };
+}
+
+.visible-desktop {
+  @include mobiles {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @include mobiles {
+    display: block;
+  }
+
+  @include desktop {
+    display: none !important;
+  }
+}
+
+
+.hljs {
+  padding: 0 !important;
+  background: transparent !important;
+}

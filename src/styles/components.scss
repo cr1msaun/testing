@@ -1,0 +1,55 @@
+.btn {
+  display: inline-block;
+  background: $blue;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-image: none;
+  text-transform: uppercase;
+  color: $white;
+  text-align: center;
+  padding: 14px;
+  line-height: 1.25rem;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: -0.01rem;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:disabled {
+    cursor: not-allowed;
+    color: $secondary-text-color;
+    background-color: $grey-hue-1;
+
+    & .svg-icon {
+      fill: $secondary-text-color;
+    }
+  }
+
+  @include mobiles {
+    padding: 11.5px 14px;
+  }
+}
+
+.badge {
+  display: inline-block;
+  height: 20px;
+  padding: 0 7px 0 6px;
+  text-align: center;
+  line-height: 20px;
+  background: $grey;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  background: $black;
+  color: $white;
+  letter-spacing: -1px;
+
+  &_danger {
+    background: $danger-color;
+  }
+
+  &_success {
+    background: $success-color;
+  }
+}

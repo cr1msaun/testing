@@ -1,0 +1,49 @@
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-left: $left-nav-width;
+
+  @include mobiles {
+    margin-left: 0;
+  }
+}
+
+.nav-left {
+  width: $left-nav-width;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: url('/img/aside.png') no-repeat top left $grey;
+
+  @include mobiles {
+    display: none;
+  }
+}
+
+.user-pic {
+  margin-left: 24px;
+
+  &__image {
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    margin: 20px 12px 0 0;
+  }
+
+  &__svg-icon {
+    width: 4px;
+    height: 100%;
+    float: right;
+  }
+}
+
+.main-content {
+  padding: 18px 0 0;
+  flex-grow: 2;
+
+  @include mobiles {
+    padding: 9px 0;
+  }
+}

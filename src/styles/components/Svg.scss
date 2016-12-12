@@ -1,0 +1,5 @@
+.svg-icon {
+  max-height: 100%; // Safari bug fix
+  fill: $dark-blue;
+  transition: opacity 0.2s;
+}

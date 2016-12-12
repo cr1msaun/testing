@@ -1,0 +1,40 @@
+.progress {
+  display: flex !important;
+  align-items: center;
+  font-size: 1.125rem;
+  color: $secondary-text-color;
+
+  @include mobiles {
+    font-size: 1rem;
+  }
+
+  &_header {
+    margin-right: auto;
+  }
+
+  &_footer {
+    margin-right: 30px;
+  }
+
+  &__current {
+    font-weight: 500;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    background: $white;
+    color: $black;
+
+    @include mobiles {
+      padding: 0 2px;
+    }
+  }
+
+  &__separator {
+    margin: 0 5px;
+
+    @include mobiles {
+      margin: 0 2px;
+    }
+  }
+}

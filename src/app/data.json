@@ -1,0 +1,53 @@
+{
+  "id": 1,
+  "title": "C#. Средний уровень",
+  "language": "csharp",
+  "titleIcon": "c_sharp.png",
+  "timer": 900,
+  "questions": [
+    {
+      "id": 101,
+      "title": "Двумерный массив символов из двух строк и трёх столбцов может быть задан",
+      "topic": "Работа с массивами",
+      "answers": [
+        {"id": 1001, "text": "char[,] A = new char[2, 3];"},
+        {"id": 1002, "text": "var c = new char[3, 2];"},
+        {"id": 1003, "text": "var B = new char[2, 3] { { '1', '2', '3' }, { '4', '5', '6' } };"},
+        {"id": 1004, "text": "var D = new char[{ { '1', '2', '3' }, { '4', '5', '6' } }];"},
+        {"id": 1005, "text": "Char[,] E = new Char[2, 3] { { 'a', 'b', 'c' }, { 'a', 'b', 'c' } };"}
+      ]
+    },
+    {
+      "id": 102,
+      "title": "Какие модификаторы доступа из перечисленных по умолчанию даются классу, описанному в namespace?",
+      "topic": "ООП",
+      "answers": [
+        {"id": 1006, "text": "Public"},
+        {"id": 1007, "text": "Private"},
+        {"id": 1008, "text": "Protected"},
+        {"id": 1009, "text": "Internal"},
+        {"id": 1010, "text": "Ни один из перечисленных"}
+      ]
+    },
+    {
+      "id": 103,
+      "title": "Среди перечисленных конструкций C# укажите объявление метода",
+      "topic": "Синтаксис",
+      "answers": [
+        {"id": 1011, "text": "string Name;"},
+        {"id": 1012, "text": "string Name {get{return “Name”;}}"},
+        {"id": 1013, "text": "string this [int i] {get {return “Name”;}}"},
+        {"id": 1014, "text": "string GetName () { return “Name”;}"}
+      ]
+    },
+    {
+      "id": 104,
+      "title": "Два последовательных вызова GetHashCode у одного и того же объекта должны возвращать одно и то же значение.",
+      "topic": "Основы",
+      "answers": [
+        {"id": 1015, "text": "Да"},
+        {"id": 1016, "text": "Нет"}
+      ]
+    }
+  ]
+}

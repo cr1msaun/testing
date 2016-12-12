@@ -1,0 +1,57 @@
+.countdown {
+  $root: &;
+
+  display: flex;
+  overflow: hidden;
+  margin-right: 16px;
+  border-radius: 5px;
+  max-height: $testing-footer-height-desktop;
+
+  &_disabled {
+    & #{$root}__timer {
+      color: $secondary-text-color;
+      background-color: $grey-hue-1;
+    }
+
+    & #{$root}__pause {
+      display: none;
+    }
+  }
+
+  &__timer {
+    padding: 0 21px;
+    overflow: hidden;
+    background: #fff;
+    font-size: 1.125rem;
+    line-height: $testing-footer-height-desktop;
+
+    @include mobiles {
+      padding: 0 13px;
+      line-height: $testing-footer-height-mobiles;
+    }
+  }
+
+  &__pause {
+    background: $grey-hue-1;
+    text-align: center;
+    padding: 0 18px;
+    cursor: pointer;
+    height: $testing-footer-height-desktop;
+
+    @include mobiles {
+      padding: 0 13px;
+      height: $testing-footer-height-mobiles;
+    }
+
+    &:hover #{$root}__svg-icon {
+      opacity: 1;
+    }
+  }
+
+  &__svg-icon {
+    height: 100%;
+    width: 12px;
+    opacity: .4;
+    max-height: $testing-footer-height-desktop;
+  }
+}

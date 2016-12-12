@@ -1,0 +1,48 @@
+.nav {
+  $root: &;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    list-style: none;
+
+    &-horizontal {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    display: block;
+    width: 80px;
+    height: $header-height-desktop;
+    position: relative;
+    margin-left: 16px;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover #{$root}__svg-icon {
+      opacity: 1;
+    }
+  }
+
+  &__svg-icon {
+    width: 32px;
+    height: 100%;
+    opacity: .4;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 31%;
+    right: 0;
+
+    &_messages {
+      right: -3px;
+    }
+  }
+}

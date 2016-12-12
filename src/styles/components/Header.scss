@@ -1,0 +1,49 @@
+.header {
+  height: $header-height-desktop;
+
+  @include mobiles {
+    height: $header-height-mobiles;
+  }
+
+  &__content {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid $grey;
+  }
+
+  &__nav {
+
+  }
+}
+
+.mobile-nav {
+
+  &-toggle {
+    position: relative;
+
+    &__line {
+      display: block;
+      width: 28px;
+      height: 4px;
+      background: $grey-hue-1;
+      border-radius: 3px;
+      margin-bottom: 6px;
+
+      &_first {
+
+      }
+
+      &second {
+
+      }
+
+      &_third {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
